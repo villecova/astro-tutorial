@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const pageTitle = "Home Page";
 ---
 
@@ -11,9 +13,16 @@ const pageTitle = "Home Page";
     <title>Cálida Planta | {pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <nav>
+      <div>
+        <img src="../../public/favicon.svg" alt="Header Logo" />
+      </div>
+      <div>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+      </div>
+    </nav>
 
     <h1>{pageTitle}</h1>
   </body>

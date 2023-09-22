@@ -1,5 +1,7 @@
 ---
-const pageTitle = "My Astro Learning Blog";
+import "../styles/global.css";
+
+const pageTitle = "My Astro Blog";
 ---
 
 <html lang="en">
@@ -11,9 +13,16 @@ const pageTitle = "My Astro Learning Blog";
     <title>Cálida Planta | {pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <nav>
+      <div>
+        <img src="../../public/favicon.svg" alt="Header Logo" />
+      </div>
+      <div>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+      </div>
+    </nav>
 
     <h1>{pageTitle}</h1>
     <p>This is where I will post about my journey learning Astro.</p>
