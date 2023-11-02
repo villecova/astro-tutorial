@@ -28,10 +28,64 @@ html {
 
   nav a  {
     text-decoration: none;
-    padding-left: 0.5rem;
   }
 
   nav img  {
     background: purple;
     height: 25px;
   }
+
+  /* nav styles */
+
+.nav-links {
+  display: none;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  /* padding-right: 20px; */
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 25px;
+  height: 5px;
+  margin-bottom: 4px;
+  background-color: purple;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: flex;
+    margin-left: 5em;
+    position: static;
+    width: auto;
+    background: none;
+    gap: 2rem;
+  }
+
+  /* .nav-links a {
+    display: flex;
+    padding: 0 20px;
+    gap: 1rem;
+    flex-direction: row;
+  } */
+
+  .hamburger {
+    display: none;
+  }
+
+}
